@@ -179,13 +179,26 @@ nav a:hover::after {
 .content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 2rem;
 }
 
+.title-content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title-content h4{
+  font-size: 1rem;
+  color: #fff;
+  text-align: start;
+}
+
 .content img {
-  width: 35%;
-  border-radius: 1rem;
+  width: 37%;
+  border-radius: .5rem;
 }
 
 .content img:hover {
@@ -195,7 +208,7 @@ nav a:hover::after {
 .content p {
   font-size: 1rem;
   color: #fff;
-  text-align: start;
+  text-align: justify;
 }
 
 .content p b {
