@@ -197,9 +197,10 @@ nav a:hover::after {
 }
 
 .title-content a {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #fff;
   text-align: start;
+  text-decoration: none;
 }
 
 .content img {
