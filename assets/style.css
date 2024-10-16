@@ -12,7 +12,7 @@
 
 body {
   font-family: "poppins", sans-serif;
-  background: linear-gradient(to bottom, #000, #000);
+  background-color: #000;
 }
 
 ::-webkit-scrollbar-track {
@@ -156,7 +156,7 @@ nav a:hover::after {
 }
 
 .container {
-  padding: 2rem 4%;
+  padding: 2rem 8%;
 }
 
 .waves h3 {
@@ -165,6 +165,8 @@ nav a:hover::after {
   font-size: 2rem;
   color: #fff;
   z-index: 99;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .waves h3:nth-child(1) {
@@ -423,7 +425,7 @@ ul {
 footer {
   padding-top: 5rem;
   font-family: "Poppins", sans-serif;
-  background: #000;
+  background: linear-gradient(to bottom, #000, #242424);
 }
 
 footer p {
