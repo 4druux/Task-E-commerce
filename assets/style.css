@@ -173,10 +173,6 @@ nav a:hover::after {
   color: transparent;
   -webkit-text-stroke: 1px #c7c7c7;
 }
-.waves h3:nth-child(2) {
-  color: transparent;
-  -webkit-text-stroke: 1px #c7c7c7;
-}
 
 .content {
   display: flex;

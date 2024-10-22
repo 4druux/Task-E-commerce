@@ -20,6 +20,7 @@
       href="assets/img/atlassian-brands-solid.svg"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -49,8 +50,21 @@
           <h3>About</h3>
         </div>
         <div class="content">
-          <img src="assets/img/p-7.jpg" alt="" />
-          <div class="title-content">
+          <img
+            src="assets/img/p-7.jpg"
+            data-aos="fade-right"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          />
+          alt="" />
+          <div
+            class="title-content"
+            data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
             <a
               href="https://books.google.co.id/books/about/E_Business.html?id=kbN0kd4jlTkC&redir_esc=y"
               target="_blank"
@@ -93,7 +107,13 @@
           </div>
           <div class="swiper-shadow-left"></div>
           <div class="swiper-shadow-right"></div>
-          <div class="swiper">
+          <div
+            class="swiper"
+            data-aos="fade-up"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="swiper-slide-img">
@@ -363,5 +383,10 @@
       </ul>
       <p class="copyright">Copyright &copy; 2024. All rights reserved.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
