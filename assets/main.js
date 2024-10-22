@@ -41,8 +41,8 @@ function resetTypingEffect(element) {
 // Fungsi untuk animasi pengetikan
 function typeWriterEffect(
   element,
-  typingSpeed = 150,
-  backspaceSpeed = 100,
+  typingSpeed = 30,
+  backspaceSpeed = 30,
   delayBetweenTexts = 1000
 ) {
   const baseText = "Welcome to ";
@@ -104,7 +104,7 @@ function hideLoadingPage() {
   resetTypingEffect(textElement);
 
   // Jalankan animasi pengetikan
-  typeWriterEffect(textElement, 150, 100, 1000);
+  typeWriterEffect(textElement, 30, 30, 1000);
 
   // Setelah animasi pengetikan selesai, hentikan dan mulai fade-out
   setTimeout(function () {
@@ -130,7 +130,7 @@ function hideLoadingPage() {
         });
       },
     });
-  }, 11000);
+  }, 5000);
 }
 
 // CSS untuk kursor berkedip dan glitch

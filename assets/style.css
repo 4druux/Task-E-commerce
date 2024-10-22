@@ -126,10 +126,10 @@ body.show-loading-page {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #fff;
-  animation: fadeInUp 2s ease-in-out forwards;
+  animation: fadeInUp 1s ease-in-out forwards;
   opacity: 0;
   transform: translateY(50px);
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .loading-entry:hover {
