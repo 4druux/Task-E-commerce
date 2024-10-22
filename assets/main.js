@@ -1,3 +1,19 @@
+function toggleAudio() {
+  const audio = document.getElementById("background-audio");
+  const audioControl = document.getElementById("audio-control");
+
+  // Check if audio is muted
+  if (audio.paused) {
+    // Play the audio and change the icon to mute
+    audio.play();
+    audioControl.src = "assets/img/play.png"; // Change to the path of your mute icon
+  } else {
+    // Pause the audio and change the icon to play
+    audio.pause();
+    audioControl.src = "assets/img/mute.png"; // Change to the path of your play icon
+  }
+}
+
 // Animasi Opening Homepage
 function showLoadingPage() {
   document.body.classList.add("show-loading-page");
@@ -105,6 +121,13 @@ function hideLoadingPage() {
         // Tampilkan elemen utama dengan animasi fade-in
         document.querySelector("main").style.display = "block";
         gsap.fromTo("main", { opacity: 0 }, { opacity: 1, duration: 2 });
+
+        // Putar audio secara otomatis setelah loading selesai
+        const audio = document.getElementById("background-audio");
+        audio.muted = false; // Pastikan audio tidak dalam keadaan mute
+        audio.play().catch((error) => {
+          console.error("Audio playback failed: ", error);
+        });
       },
     });
   }, 11000);

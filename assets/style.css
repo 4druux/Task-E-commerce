@@ -548,6 +548,18 @@ ul {
   background-color: #ff0000;
 }
 
+.music {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+.music img {
+  width: 20px;
+  cursor: pointer;
+}
+
 footer {
   padding-top: 5rem;
   font-family: "Poppins", sans-serif;
