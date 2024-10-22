@@ -21,10 +21,32 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Link JS Start -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
-  <body>
+  <body class="no-scroll">
+    <div class="after-load">
+      <h4></h4>
+    </div>
+    <div class="loading-page">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+          d="M152.2 236.4c-7.7-8.2-19.7-7.7-24.8 2.8L1.6 490.2c-5 10 2.4 21.7 13.4 21.7h175c5.8 .1 11-3.2 13.4-8.4 37.9-77.8 15.1-196.3-51.2-267.1zM244.4 8.1c-122.3 193.4-8.5 348.6 65 495.5 2.5 5.1 7.7 8.4 13.4 8.4H497c11.2 0 18.4-11.8 13.4-21.7 0 0-234.5-470.6-240.4-482.3-5.3-10.6-18.8-10.8-25.6 .1z"
+        />
+      </svg>
+      <div class="loading-name">Andrew Samaga C</div>
+      <div class="loading-entry" onclick="handleLoadingEntryClick()">
+        Tap Here
+      </div>
+    </div>
     <header>
-      <a href="#">This <span>4drux</span> </a>
+      <a href="#" id="reloadPage">This <span>4drux</span> </a>
       <nav>
         <a href="#" class="active">Home</a>
         <a href="#about">About</a>
@@ -53,7 +75,7 @@
           <img
             src="assets/img/p-7.jpg"
             data-aos="fade-right"
-            data-aos-offset="500"
+            data-aos-offset="300"
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
           />
@@ -61,7 +83,7 @@
           <div
             class="title-content"
             data-aos="fade-left"
-            data-aos-offset="500"
+            data-aos-offset="300"
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
           >
@@ -101,19 +123,20 @@
           </div>
         </div>
 
-        <div class="gallery" id="gallery">
+        <div
+          class="gallery"
+          id="gallery"
+          data-aos="fade-up"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="waves">
             <h3>Our Gallery</h3>
           </div>
           <div class="swiper-shadow-left"></div>
           <div class="swiper-shadow-right"></div>
-          <div
-            class="swiper"
-            data-aos="fade-up"
-            data-aos-offset="500"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
-          >
+          <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="swiper-slide-img">
